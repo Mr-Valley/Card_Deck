@@ -45,7 +45,7 @@ public class Card {
 	}
 	
 	//returns a formatting string that can be directly displayed
-	public String toPrettyString() {
+	public String toString() {
 		String cardName = "";
 		switch (this.value) {
 			case 1: cardName+= "Ace"; break;
@@ -57,19 +57,19 @@ public class Card {
 		}
 		
 		switch (this.suit) {
-			case 0: cardName += " of Spades"; break;
-			case 1: cardName += " of Clubs"; break;
-			case 2: cardName += " of Diamonds"; break;
-			case 3: cardName += " of Hearts"; break;
+			case 0: cardName += " of Clubs"; break;
+			case 1: cardName += " of Diamonds"; break;
+			case 2: cardName += " of Hearts"; break;
+			case 3: cardName += " of Spades"; break;
 		}
 		
 		return cardName;
 	}
 
-	@Override
-	public String toString() {
-		return "Card [value=" + value + ", suit=" + suit + "]";
-	}
+//	@Override
+//	public String toString() {
+//		return "Card [value=" + value + ", suit=" + suit + "]";
+//	}
 	
 	
 }

@@ -2,6 +2,7 @@ package deck;
 
 import java.util.ArrayList;
 
+//not necessary? 
 public class Hand {
 	private ArrayList<Card> cards = new ArrayList<Card>();
 

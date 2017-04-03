@@ -17,7 +17,7 @@ public class Deck {
 	//fills deck with cards, in order
 	public void shuffle(int numberOfDecks) {
 		this.numberOfDecks = numberOfDecks;
-		
+		cards.clear();
 		for(int i=0;i<this.numberOfDecks;i++) {
 			for (int j=1;j<=13;j++) {
 				cards.add(new Card(j,0));
